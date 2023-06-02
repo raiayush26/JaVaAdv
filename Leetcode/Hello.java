@@ -12,7 +12,7 @@ class Hello{
          return maxprofit;
      }
     public static void main(String[] args) {
-       int [] prices = {2,4,1,1,6,5};
+       int [] prices = {2,4,1,1,6 ,8,5};
        System.out.println(maxProfit(prices));
     }
 
