@@ -1,0 +1,5 @@
+modiflier returnType methodName(list of parameter){
+    //method body 
+}
+
+public static int (int n1,int )

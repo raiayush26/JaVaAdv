@@ -1,0 +1,17 @@
+Obeject and class
+
+class Ayush{
+    type var1;
+    type var3;
+    type var2;
+
+    type method1(param){
+        //body of method 
+
+    }
+    type method2(param){
+        // body of method
+    }
+}
+
+class 

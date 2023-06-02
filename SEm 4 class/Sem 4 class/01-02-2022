@@ -1,0 +1,3 @@
+double [] mylist={1,23,5,4564,42}
+double[]yourList= new double[4]
+yourList[0]

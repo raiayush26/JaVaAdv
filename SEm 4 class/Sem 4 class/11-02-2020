@@ -1,0 +1,12 @@
+interface A{
+    void mymethod1();
+    void mymethod2();    
+}
+interface B extends A{
+    void mymethod3();
+}
+class Myclass implenents B{
+    public void mymethod3(){
+        System.out.println("I am in method 2");
+    }
+}

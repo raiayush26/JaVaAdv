@@ -1,0 +1,41 @@
+// class Test{
+//     int a;//Bydeafut is public 
+//    int b ;
+//    int c;
+//    static printc(){
+//     System.out.println("the value of c is " +c);
+
+//    }
+ 
+   
+// }
+// class Test5{
+//     public static void main (String args[]){     
+//     // Test ob1=new Test(); 
+//     // Test ob1 =new Test();
+//     // System.out.println("the value of a is "+ob1.a);
+//     // System.out.println("the value of b is "+ob1.b);
+//     Test.printc();
+// }
+// }
+we use static help to eccess to any obeject in main 
+class Test{
+    //     int a;//Bydeafut is public 
+    //    int b ;
+    //    int c;
+    //    static printc(){
+    //     System.out.println("the value of c is " +c);
+    
+    //    }
+     
+       
+    // }
+    // class Test5{
+    //     public static void main (String args[]){     
+    //     // Test ob1=new Test(); 
+    //     // Test ob1 =new Test();
+    //     // System.out.println("the value of a is "+ob1.a);
+    //     // System.out.println("the value of b is "+ob1.b);
+    //     Test.printc();
+    // }
+    // }
