@@ -7,7 +7,7 @@ public class Sorted {
         if(arr[mid]==tar){
             return mid;
         }
-        // found on l1
+        // found on l1 fgbg
         if(arr[si]<= arr[mid]){
             if(arr[si]<=tar && tar<=arr[mid]){
                 return Search(arr, tar, si, mid-1);
