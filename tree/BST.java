@@ -45,6 +45,7 @@ public class BST {
 
     public static void main(String[] args) {
         int values[]= {1,4,3,2,4,2,5,0,0,0,0,0,0,4,6};
+        // Adding the commit
         Node root =null;
         for (int i = 0; i < values.length; i++) {
             root = insert(root, values[i]);
