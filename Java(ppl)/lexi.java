@@ -2,11 +2,15 @@ import java.util.*;
 
 public class lexi {
     public static void main(String[] args) {
-        String stig= "malayalam";
-        int len =stig.length();
-        char charArray[] = stig.toCharArray();
-        // System.out.println(charArray);
-        Arrays.sort(charArray);
+       
+        int n= 10;
+        for(int i = 0; i < n; i++) {  
+            System.out.print(i+2+" ");
+        }
+        System.out.println();
+        for(int i = 0; i < n; ++i) {  
+            System.out.print(i+2+" ");
+        }
         
         
     }
