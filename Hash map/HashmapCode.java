@@ -109,7 +109,7 @@ public class HashmapCode {
                 LinkedList<Node> ll  =buckets[i];
                 for (int j = 0; j < ll.size(); j++) {
                     Node node = ll.get(j);
-                    keys.add(node.key, null);
+                    keys.add(node.key);
                 }
             }
             return keys;
