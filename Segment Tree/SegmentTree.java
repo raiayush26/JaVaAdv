@@ -6,8 +6,7 @@ public class SegmentTree {
     }
 
     public static  int buildST(int arr[] ,int sti, int start,int end){
-        
-        if(start == end){
+       if(start == end){
             tree[sti]= arr[start];
             return arr[start];
         }
@@ -16,8 +15,8 @@ public class SegmentTree {
         buildST(arr, 2*sti+2, mid+1, end);
         tree[sti] =tree[2*sti+1]+ tree[2*sti+2];
         return tree[sti]; 
-
     }
+
      public static int getSumUtils(int i ,int si,int sj,int qi, int qj){
         if(qj<=si || qi>= sj){ // non - overlapping
             return 0;
@@ -32,6 +31,23 @@ public class SegmentTree {
         }
 
      }
+public static void updateUtils( int i ,int si,int sj,int idx,int diff){
+ if( idx> sj|| idx< si){
+    return;
+ }    
+ tree[i]+= diff;
+ if(si!= sj){
+    int mid = (si+sj)/2;
+    updateUtils(2*i+1, si, mid, idx, diff);
+    updateUtils(2*i+2, mid+1, sj, idx, diff);
+ }
+}
+     public static void update(int arr[], int idx,int newVal){
+        int n= arr.length;
+        int diff= newVal- arr[idx];
+        arr[idx] = newVal;
+        updateUtils(0, 0, n-1, idx, diff);// segment tree updated
+     }
     public static int getSum(int arr[],int qi, int qj){
         int n =arr.length;
         return getSumUtils(0, 0, n-1, qi, qj);
@@ -44,7 +60,9 @@ public class SegmentTree {
         // for(int sti =0;sti<tree.length;sti++){
         //     System.out.print(tree[sti]+" ");
         // }
-        System.out.println(getSum(arr, 2, 5));
+        System.out.println(getSum(arr, 2, 5));//18
+        update(arr, 2, 2);
+        System.out.println(getSum(arr, 2, 5));//17
 
         
     }
