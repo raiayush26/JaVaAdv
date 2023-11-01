@@ -1,4 +1,4 @@
-// find the1 & last occurance of an element in string
+// find the & last occurance of an element in string
 public class Recu3 {
     public static int first = -1;
     public static int last = -1;

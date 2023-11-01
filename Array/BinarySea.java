@@ -19,7 +19,12 @@ public class BinarySea {
       } 
   
     public static void main(String[] args) {
-        int [] peak ={0,1,0,4};
-        System.out.println(Mountain(peak));
+        int [] peak ={4,1,8,4};
+        //System.out.println(Mountain(peak));
+        peak[0] = -1;
+        for (int i = 0; i < peak.length; i++) {
+            System.out.print(peak[i]+" ");
+        }
+
     }
 }
