@@ -45,8 +45,8 @@ public class OOP {
            Student s2 = new Student(s1);
            s2.printInfo(); 
            s2.printInfo(45);     
-           s2.printInfo("na");     
-           s2.printInfo("na",56);     
+        //    s2.printInfo("na");     
+        //    s2.printInfo("na",56);     
     }
 }
 
