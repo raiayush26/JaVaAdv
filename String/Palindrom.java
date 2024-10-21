@@ -11,7 +11,7 @@ public class Palindrom {
         if (s.length() == 0) {
             System.out.println(0);
         } else {
-            String[] strings = s.split(" ");
+            String[] strings = s.split("['!?,._@ ]+");
             System.out.println(strings.length);
             for (String str : strings)
                 System.out.println(str);
